@@ -46,4 +46,15 @@ La balise  `<app-root>`  correspond à AppComponent
 ### Ajoutez un peu de style
 
 - Dans le  `<head>`  de  `index.html` pour importer la police Roboto depuis Google Fonts.
-- 
+
+### Écoutez le template
+- pour ajouter une methode de bouton il faut cree le bouton dans `face-snap.component.html` et ecrire une fonction dans `face-snap.component.ts` avec l'option `On` comme le nom de cette methode `OnAjout`
+- Finalement, on appel la methode dans le fichier `face-snap.component.html` comme suite `<button (click) = "OnAjout" >`
+  
+### Créez une classe FaceSnap (model)
+- la creation de la classe `FaceSnap` dans le `face-snap.model.ts ` dans le dossier `models`
+- avec un consctructeur et public pour elimiter la redandance 
+
+### Ajoutez des propriétés personnalisées
+- pour faire appel ou injecter une propriete de l'exterieur il faut faire appel avec l'object avec `@Input() nomVariable: nomClass`
+- l'injection est faite de puis le parent `app.component.ts` comme 

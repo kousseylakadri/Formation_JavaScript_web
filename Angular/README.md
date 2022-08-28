@@ -57,4 +57,15 @@ La balise  `<app-root>`  correspond à AppComponent
 
 ### Ajoutez des propriétés personnalisées
 - pour faire appel ou injecter une propriete de l'exterieur il faut faire appel avec l'object avec `@Input() nomVariable: nomClass`
-- l'injection est faite de puis le parent `app.component.ts` comme 
+- l'injection est faite depuis le parent `app.component.ts` comme 
+
+### Ajoutez une propriété optionnelle
+- propriété optionnelle il suffi d'ajouter un `?` comme suite : `titre?: string`
+- pour afficher ou pas la propriété on etulise `ngIf` 
+
+### Affichez des listes ou tableau
+- avec `*ngfor`
+
+### Ajoutez du style dynamique
+- avec `ngstyl`
+- chaque componet a son propre style
